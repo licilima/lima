@@ -1,191 +1,328 @@
 <!DOCTYPE html>
 <html lang="es-CO">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Firma de Abogados en Tunja, Colombia. Soluciones legales corporativas, civiles y de familia.">
-    <title>LIMA | Despacho Jurídico empresarial </title>
-
+    <title>LIMA | Despacho Jurídico Empresarial</title>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Hoja de Estilos Externa -->
-    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="src/css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
-
 <body>
 
     <!-- ========================= HEADER ========================= -->
-    <header id="main-header">
-        <div class="container nav-container">
-            <!-- Logo -->
-            <a href="#" class="logo">
-                <img src="src/images/logoLima.jpeg" alt="Logo Lima Asociados">
-                LIMA <span> Despacho Jurídico empresarial </span>
-            </a>
-
-            <!-- Navegación -->
-            <nav>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#perfil">Perfil Profesional</a></li>
-                    <li><a href="#por-que-nosotros">Por qué elegirnos</a></li>
-                    <li><a href="#contacto" class="btn btn-primary" style="color: white;">Contacto</a></li>
+    <header>
+        <div class="container nav-container">            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#enfoque">Nuestro enfoque</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
 
-            <!-- Menú Hamburguesa para Móviles -->
-            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+            <a href="#contacto" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Agendar consulta</a>
+            
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
         </div>
     </header>
 
     <main>
         <!-- ========================= HERO SECTION ========================= -->
-        <section id="hero" class="hero">
-            <div class="container">
-                <h1>Derecho estratégico para personas y empresas</h1>
-                <p>Defendemos sus intereses con integridad, ofreciendo asesoría jurídica especializada para personas y
-                    empresas en toda Colombia.</p>
-                <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
-                        </path>
-                    </svg>
-                    Consulta por WhatsApp
-                </a>
-            </div>
-        </section>
-
-        <!-- ========================= ÁREAS DE PRÁCTICA ========================= -->
-        <section id="perfil" class="perfil">
-            <div class="container">
-                <h2 class="section-title">Perfil Profesional</h2>
-                <div class="grid-3">
-
-                    <div class="card">
-                        <div class="card-icon">💼</div>
-                        <h3>Lina Mariana Galindo Malagón</h3>
-                        <p>Abogada titulada de la UPTC con especialización en Derecho Comercial de la Universidad
-                            Externado.</p>
+        <section class="hero bg-marfil">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="subtitle accent-line">BIENVENIDOS A</p>
+                    <h1 class="logo-text">L I M A</h1>
+                    <p class="brand-subtitle">DESPACHO JURÍDICO EMPRESARIAL</p>
+                    <h2 class="serif-italic">Derecho estratégico para personas y empresas.</h2>
+                    <p class="hero-desc">Convertimos los desafíos jurídicos en decisiones estratégicas.</p>
+                    <div class="btn-group">
+                        <a href="#contacto" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Agendar consulta <i class="fas fa-arrow-right"></i></a>
+                        <a href="#servicios" class="btn btn-outline">Conocer nuestros servicios <i class="fas fa-arrow-right"></i></a>
                     </div>
-
-                    <div class="card">
-                        <div class="card-icon">👨‍👩‍👧‍👦</div>
-                        <h3>Derecho de Comercial</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo dignissimos aliquid magni
-                            laboriosam, sequi nisi itaque reprehenderit! Quos quae corporis aliquid repellendus
-                            laboriosam, adipisci ex repudiandae, hic nesciunt eveniet aspernatur!</p>
+                </div>
+                <div class="hero-graphics">
+                    <!-- Representación del gráfico decorativo derecho -->
+                    <div class="graphic-circle">
+                        <img src="src/images/logoLima.jpeg" alt="Gráfico LIMA" class="hero-graphic-img">
+                        <div class="floating-text">
+                            <p>ESTRATEGIA</p>
+                            <p>CONFIANZA</p>
+                            <p>SOLUCIONES</p>
+                        </div>
                     </div>
-
-                    <div class="card">
-                        <div class="card-icon">⚖️</div>
-                        <h3>Derecho Civil</h3>
-                        <p>Representación judicial en responsabilidad civil extracontractual, redacción de contratos,
-                            estudio de títulos y resolución de conflictos de propiedad.</p>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- ========================= POR QUÉ ELEGIRNOS ========================= -->
-        <section id="por-que-nosotros" class="why-us">
-            <div class="container">
-                <h2 class="section-title">Por qué confiar en nuestra firma</h2>
-                <div class="why-us-grid">
-
-                    <div class="trust-item">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                            <path d="M2 12h20"></path>
-                        </svg>
-                        <h3>Experiencia Local</h3>
-                        <p>Amplio conocimiento de la jurisdicción colombiana y representación efectiva ante cortes y
-                            tribunales en Boyacá y Bogotá y el resto del país.</p>
+        <!-- ========================= POR QUÉ LIMA ========================= -->
+        <section id="nosotros" class="why-lima bg-white">
+            <div class="container section-split">
+                <div class="split-header">
+                    <h2 class="serif-title">¿Por qué LIMA?</h2>
+                    <p class="accent-text">Más que resolver problemas, diseñamos estrategias.</p>
+                </div>
+                <div class="split-content features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-bullseye icon-salvia"></i>
+                        <h3>ESTRATEGIA</h3>
+                        <p>Analizamos cada situación más allá del problema jurídico inmediato.</p>
                     </div>
-
-                    <div class="trust-item">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                        <h3>Abogados Certificados</h3>
-                        <p>Profesionales altamente calificados y debidamente registrados ante el Consejo Superior de la
-                            Judicatura de Colombia.</p>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt icon-salvia"></i>
+                        <h3>PREVENCIÓN</h3>
+                        <p>Anticipamos riesgos y ayudamos a tomar mejores decisiones.</p>
                     </div>
-
-                    <div class="trust-item">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <h3>Atención Personalizada</h3>
-                        <p>Entendemos que cada caso es único. Brindamos un acompañamiento cercano, transparente y
-                            orientado a resultados para cada cliente.</p>
+                    <div class="feature-item">
+                        <i class="fas fa-users icon-salvia"></i>
+                        <h3>CERCANÍA</h3>
+                        <p>El cliente debe entender claramente qué sucede y cuáles son sus alternativas.</p>
                     </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-line icon-salvia"></i>
+                        <h3>RESULTADOS</h3>
+                        <p>Diseñamos soluciones jurídicas orientadas a objetivos concretos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- ========================= SERVICIOS ========================= -->
+        <section id="servicios" class="services bg-marfil">
+            <div class="container section-split">
+                <div class="split-header">
+                    <h2 class="serif-title">Servicios jurídicos</h2>
+                    <p>Soluciones integrales para cada etapa de su crecimiento.</p>
+                    <a href="#" class="link-champagne">Ver todos los servicios <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="split-content services-grid">
+                    <!-- Servicio 1 -->
+                    <div class="service-card">
+                        <div class="icon-box"><i class="far fa-building"></i></div>
+                        <div class="service-info">
+                            <h3>Derecho empresarial</h3>
+                            <p>Constitución y estructuración de empresas, contratos, sociedades, gobierno corporativo y asesoría empresarial.</p>
+                            <a href="#" class="link-salvia">Conocer este servicio <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Servicio 2 -->
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fas fa-balance-scale"></i></div>
+                        <div class="service-info">
+                            <h3>Litigios y controversias</h3>
+                            <p>Estrategia procesal, representación judicial y solución de controversias.</p>
+                            <a href="#" class="link-salvia">Conocer este servicio <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Servicio 3 -->
+                    <div class="service-card">
+                        <div class="icon-box"><i class="far fa-file-alt"></i></div>
+                        <div class="service-info">
+                            <h3>Contratación</h3>
+                            <p>Elaboración, revisión, negociación y estructuración de contratos.</p>
+                            <a href="#" class="link-salvia">Conocer este servicio <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Servicio 4 -->
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fas fa-user-friends"></i></div>
+                        <div class="service-info">
+                            <h3>Conciliación y solución de conflictos</h3>
+                            <p>Alternativas estratégicas para resolver controversias de manera eficiente.</p>
+                            <a href="#" class="link-salvia">Conocer este servicio <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Servicio 5 -->
+                    <div class="service-card">
+                        <div class="icon-box"><i class="far fa-user"></i></div>
+                        <div class="service-info">
+                            <h3>Asesoría para personas</h3>
+                            <p>Acompañamiento jurídico personalizado en asuntos patrimoniales, contractuales y civiles.</p>
+                            <a href="#" class="link-salvia">Conocer este servicio <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Servicio 6 -->
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fas fa-city"></i></div>
+                        <div class="service-info">
+                            <h3>Asesoría para empresas</h3>
+                            <p>Acompañamiento jurídico permanente para empresarios y organizaciones.</p>
+                            <a href="#" class="link-salvia">Conocer este servicio <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= TARGET AUDIENCE ========================= -->
+        <section class="target-audiences">
+            <div class="audience-half person-half">
+                <div class="audience-content">
+                    <div class="icon-circle"><i class="far fa-user"></i></div>
+                    <h2>Para personas</h2>
+                    <p>Soluciones jurídicas pensadas para proteger sus intereses y tomar decisiones con tranquilidad.</p>
+                    <a href="#" class="btn btn-outline-white">Ver servicios para personas <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="audience-half business-half">
+                <div class="audience-content">
+                    <div class="icon-circle"><i class="far fa-building"></i></div>
+                    <h2>Para empresas</h2>
+                    <p>Asesoría jurídica estratégica para empresas que quieren crecer, prevenir riesgos y tomar mejores decisiones.</p>
+                    <a href="#" class="btn btn-outline-white">Ver servicios para empresas <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= EQUIPO ========================= -->
+        <section class="team bg-marfil">
+            <div class="container section-split">
+                <div class="split-header">
+                    <h2 class="serif-title">Conozca a LIMA</h2>
+                    <p>Un equipo de profesionales comprometidos con encontrar las mejores soluciones.</p>
+                    <a href="#" class="btn btn-primary mt-2">Conozca nuestro equipo <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="split-content team-grid">
+                    <!-- Perfil 1 -->
+                    <div class="team-card">
+                        <div class="img-placeholder bg-salvia"></div>
+                        <div class="team-info">
+                            <h4>Laura Martínez <i class="fas fa-arrow-circle-right"></i></h4>
+                            <p class="role">Socia Fundadora</p>
+                            <p class="spec">Derecho empresarial</p>
+                            <p class="exp">12 años de experiencia</p>
+                        </div>
+                    </div>
+                    <!-- Perfil 2 -->
+                    <div class="team-card">
+                        <div class="img-placeholder bg-salvia"></div>
+                        <div class="team-info">
+                            <h4>Andrés Gómez <i class="fas fa-arrow-circle-right"></i></h4>
+                            <p class="role">Socio</p>
+                            <p class="spec">Litigios y controversias</p>
+                            <p class="exp">10 años de experiencia</p>
+                        </div>
+                    </div>
+                    <!-- Perfil 3 -->
+                    <div class="team-card">
+                        <div class="img-placeholder bg-salvia"></div>
+                        <div class="team-info">
+                            <h4>Camila Rojas <i class="fas fa-arrow-circle-right"></i></h4>
+                            <p class="role">Asociada</p>
+                            <p class="spec">Contratación</p>
+                            <p class="exp">7 años de experiencia</p>
+                        </div>
+                    </div>
+                    <!-- Perfil 4 -->
+                    <div class="team-card">
+                        <div class="img-placeholder bg-salvia"></div>
+                        <div class="team-info">
+                            <h4>Diego Vargas <i class="fas fa-arrow-circle-right"></i></h4>
+                            <p class="role">Asociado</p>
+                            <p class="spec">Derecho civil y personas</p>
+                            <p class="exp">5 años de experiencia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= BANNER ========================= -->
+        <section class="strategy-banner bg-verde-profundo text-white">
+            <div class="container banner-grid">
+                <h2 class="serif-italic large-text">Su problema jurídico merece una estrategia, no una respuesta genérica.</h2>
+                <div class="divider"></div>
+                <p>Escuchamos. Analizamos.<br>Diseñamos. Actuamos.</p>
+                <div class="divider hidden-mobile"></div>
+                <p>El derecho también puede ser<br>una herramienta para crecer.</p>
+            </div>
+        </section>
+
+        <!-- ========================= CONTACTO ========================= -->
+        <section id="contacto" class="contact bg-marfil">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <h2 class="serif-title">Agende su consulta</h2>
+                    <p>Cuéntenos qué necesita. Analizaremos su situación y le orientaremos sobre el camino jurídico más adecuado.</p>
+                    <a href="#" class="btn btn-carbon btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    
+                    <ul class="contact-details">
+                        <li><i class="fas fa-phone-alt"></i> +57 300 123 4567</li>
+                        <li><i class="far fa-envelope"></i> info@lima.com.co</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Calle 123 # 45-67<br>Bogotá, Colombia</li>
+                        <li><i class="far fa-clock"></i> Lun - Vie: 8:00 a.m. - 6:00 p.m.</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Nombre completo *" required>
+                        <input type="email" placeholder="Correo electrónico *" required>
+                        <input type="tel" placeholder="Teléfono *" required>
+                        <select>
+                            <option>Tipo de consulta</option>
+                            <option>Empresarial</option>
+                            <option>Personal</option>
+                        </select>
+                        <textarea rows="4" placeholder="Mensaje *" required></textarea>
+                        <button type="submit" class="btn btn-primary full-width">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="contact-calendar">
+                    <div class="calendar-box bg-white">
+                        <i class="fas fa-users" style="font-size: 4rem; color: var(--verde-salvia); margin-bottom: 1rem;"></i>
+                        <a href="#" class="btn btn-outline"><i class="far fa-calendar-alt"></i> Agendar por calendario</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- ========================= FOOTER ========================= -->
-    <footer id="contacto">
-        <div class="container">
-            <div class="footer-grid">
-
-                <div class="footer-col">
-                    <h4>LIMA Asociados</h4>
-                    <p>Firma boutique de abogados comprometida con la excelencia legal, la ética y la defensa férrea de
-                        sus derechos.</p>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <p>📍 Tunja, Boyacá<br>Tunja, Colombia</p>
-                    <p>📞 +57 (601) 555-1111</p>
-                    <p>📱 +57 300 000 0000</p>
-                    <p>✉️ email@email.com.co</p>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Enlaces Útiles</h4>
-                    <a href="#hero">Inicio</a>
-                    <a href="#areas">Áreas de Práctica</a>
-                    <a href="#por-que-nosotros">Nuestra Firma</a>
-                    <a href="#">Política de Privacidad</a>
-                    <a href="#">Términos y Condiciones</a>
-                </div>
+    <footer class="bg-carbon text-white">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="imagen.jpg" alt="Logo LIMA" class="footer-img">
+                <p>Derecho estratégico para personas y empresas.</p>
             </div>
-
-            <div class="footer-bottom">
-                <p> <span id="year"></span> Lima Asociados. Todos los derechos reservados.
-                </p>
-                <p class="dev-link">
-                </p> Desarrollado por <a href="https://github.com/sacifuentespa" target="_blank"
+            <nav class="footer-nav">
+                <a href="#">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#enfoque">Áreas de práctica</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-legal">
+                <a href="#">Política de privacidad</a>
+                <a href="#">Tratamiento de datos personales</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 LIMA. Todos los derechos reservados.</p>
+            </p> Desarrollado por <a href="https://github.com/sacifuentespa" target="_blank"
                     rel="noopener noreferrer">Santiago Cifuentes</a></p>
-            </div>
         </div>
     </footer>
 
-    <!-- Archivo JavaScript Externo -->
-    <script src="src/script.js"></script>
+    <!-- Botón flotante WhatsApp -->
+    <a href="#" class="float-whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <script src ="src/script.js"></script>
 </body>
 </html>
