@@ -444,50 +444,76 @@ header {
 .divider { width: 2px; height: 60px; background-color: var(--verde-salvia); }
 
 /* =========================================
-   CONTACTO
+   CONTACTO (Layout con Flexbox)
    ========================================= */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-    gap: 40px;
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
     padding: 80px 20px;
+    flex-wrap: wrap; /* Permite que colapse ordenadamente en móviles */
+}
+
+.contact-text {
+    flex: 1 1 400px; /* Crece, se encoge, y toma un mínimo de 400px antes de saltar */
+}
+
+.contact-text p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.contact-details-box {
+    flex: 1 1 400px;
+    background-color: var(--white); /* Le damos un fondo blanco para que resalte como una tarjeta */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
 
 .contact-details {
     list-style: none;
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 .contact-details li {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: flex;
     gap: 15px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .contact-details i {
     color: var(--verde-profundo);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 3px;
+}
+
+.social-links {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.05); /* Línea divisoria elegante */
 }
 
 .social-links a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background-color: var(--verde-profundo);
     color: var(--white);
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 12px;
     text-decoration: none;
     transition: var(--transition);
 }
 
-.social-links a:hover { background-color: var(--carbon); }
-
-.full-width { width: 100%; }
+.social-links a:hover { 
+    background-color: var(--carbon); 
+    transform: translateY(-3px);
+}
 
 
 /* =========================================
@@ -515,12 +541,14 @@ footer {
 
 .footer-logo p { font-size: 0.85rem; opacity: 0.8; }
 
-.footer-nav, .footer-legal {
+.footer-nav {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.footer-nav a, .footer-legal a {
+.footer-nav a {
     color: var(--white);
     text-decoration: none;
     font-size: 0.85rem;
@@ -534,6 +562,41 @@ footer {
     font-size: 1.2rem;
     margin: 0 10px;
     transition: var(--transition);
+}
+
+.footer-social a:hover { color: var(--verde-salvia); }
+
+/* --- Footer Bottom (Legal y Copyright) --- */
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px; /* Un poco más de espacio respecto a la línea divisoria */
+    font-size: 0.8rem;
+    opacity: 0.8; /* Aumentamos un poco la opacidad para que los enlaces se lean bien */
+}
+
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px; /* Espacio entre los enlaces y el texto de copyright */
+}
+
+.footer-legal a {
+    color: var(--verde-salvia); /* Un color sutil para diferenciarlos del menú principal */
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-legal a:hover {
+    color: var(--champagne);
+    text-decoration: underline;
+}
+
+.footer-legal span {
+    color: var(--text-light);
+    opacity: 0.5;
 }
 
 .footer-social a:hover { color: var(--verde-salvia); }

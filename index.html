@@ -46,7 +46,7 @@
                     <h2 class="serif-italic">Derecho estratégico para personas y empresas.</h2>
                     <p class="hero-desc">Convertimos los desafíos jurídicos en decisiones estratégicas.</p>
                     <div class="btn-group">
-                        <a href="#contacto" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Agendar consulta
+                        <a href="#contacto" class="btn btn-primary"> Contáctenos
                             <i class="fas fa-arrow-right"></i></a>
                         <a href="#servicios" class="btn btn-outline">Conocer nuestros servicios <i
                                 class="fas fa-arrow-right"></i></a>
@@ -56,11 +56,6 @@
                     <!-- Representación del gráfico decorativo derecho -->
                     <div class="graphic-circle">
                         <img src="src/images/logoLimaTransparencia.png" alt="Gráfico LIMA" class="hero-graphic-img">
-                        <div class="floating-text">
-                            <p>ESTRATEGIA</p>
-                            <p>CONFIANZA</p>
-                            <p>SOLUCIONES</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -339,13 +334,18 @@
 
         <!-- ========================= CONTACTO ========================= -->
         <section id="contacto" class="contact bg-marfil">
-            <div class="container contact-grid">
-                <div class="contact-info">
+            <div class="container contact-flex">
+
+                <!-- Mitad Izquierda: Texto y CTA -->
+                <div class="contact-text">
                     <h2 class="serif-title">Agende su consulta</h2>
                     <p>Cuéntenos qué necesita. Analizaremos su situación y le orientaremos sobre el camino jurídico más
                         adecuado.</p>
-                    <a href="#" class="btn btn-carbon btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="#" class="btn btn-carbon btn-whatsapp mt-3"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
 
+                <!-- Mitad Derecha: Detalles y Redes -->
+                <div class="contact-details-box">
                     <ul class="contact-details">
                         <li><i class="fas fa-phone-alt"></i> +57 300 123 4567</li>
                         <li><i class="far fa-envelope"></i> info@lima.com.co</li>
@@ -358,6 +358,7 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
+
             </div>
         </section>
     </main>
@@ -366,7 +367,7 @@
     <footer class="bg-carbon text-white">
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="imagen.jpg" alt="Logo LIMA" class="footer-img">
+                <img src="src/images/logoLimaTransparencia.png" alt="Logo LIMA" class="footer-img">
                 <p>Derecho estratégico para personas y empresas.</p>
             </div>
             <nav class="footer-nav">
@@ -382,16 +383,17 @@
                 <a href="#"><i class="fab fa-whatsapp"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-            <div class="footer-legal">
-                <a href="#">Política de privacidad</a>
-                <a href="#">Tratamiento de datos personales</a>
-            </div>
         </div>
         <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="#">Política de privacidad</a>
+                <span>|</span> <!-- Separador visual opcional -->
+                <a href="#">Tratamiento de datos personales</a>
+            </div>
             <p>&copy; 2026 LIMA. Todos los derechos reservados.</p>
-            </p> Desarrollado por <a href="https://github.com/sacifuentespa" target="_blank"
-                rel="noopener noreferrer">Santiago Cifuentes</a></p>
-        </div>
+            <p class="dev-link">
+                Desarrollado por <a href="https://github.com/sacifuentespa" target="_blank" rel="noopener noreferrer">Santiago Cifuentes</a>
+            </p>
     </footer>
 
     <!-- Botón flotante WhatsApp -->
