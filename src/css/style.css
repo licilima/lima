@@ -435,7 +435,12 @@ header {
     gap: 30px;
 }
 
-.banner-grid .large-text { font-size: 1.8rem; max-width: 400px; }
+.banner-grid .large-text { 
+    font-size: 1.8rem; 
+    max-width: 400px; 
+    color:var(--champagne); 
+}
+
 .divider { width: 2px; height: 60px; background-color: var(--verde-salvia); }
 
 /* =========================================
@@ -482,33 +487,8 @@ header {
 
 .social-links a:hover { background-color: var(--carbon); }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input, .contact-form select, .contact-form textarea {
-    padding: 12px 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
-    background-color: var(--white);
-}
-
 .full-width { width: 100%; }
 
-.calendar-box {
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
 
 /* =========================================
    FOOTER
