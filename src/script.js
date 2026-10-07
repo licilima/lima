@@ -27,3 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const accordions = document.querySelectorAll('.accordion-header');
+
+    accordions.forEach(acc => {
+        acc.addEventListener('click', () => {
+            const currentItem = acc.parentElement;
+
+            // Opcional: Cierra los otros acordeones al abrir uno nuevo
+            document.querySelectorAll('.accordion-item').forEach(item => {
+                if (item !== currentItem) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Abre o cierra el acordeón clickeado
+            currentItem.classList.toggle('active');
+        });
+    });
+});
